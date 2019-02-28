@@ -1,4 +1,5 @@
 
+
 import javax.ws.rs.GET;
 import javax.ws.rs.NotFoundException;
 import javax.ws.rs.Path;
@@ -10,12 +11,13 @@ import javax.ws.rs.ext.ExceptionMapper;
 @Path("/hello")
 public class HelloWorld {
 
+DatabaseConnection databaseConnection = new DatabaseConnection();
     // This method is called if TEXT_PLAIN is request
-//    @GET
-//    @Produces(MediaType.TEXT_PLAIN)
-//    public String sayPlainTextHello() {
-//        return "Hello Jersey";
-//    }
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String sayPlainTextHello() {
+        return "Hello Jersey";
+    }
 
     // This method is called if XML is request
 //    @GET
