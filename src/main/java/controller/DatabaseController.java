@@ -49,4 +49,9 @@ public class DatabaseController {
         DBCursor cursor = collection.find();
         return cursor;
     }
+
+    public DBObject getOneDocuments(BasicDBObject query) {
+        DBObject cursor = collection.findOne(query);
+        return cursor;
+    }
 }
