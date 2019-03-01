@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">h1 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    b {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+    }
+
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    a.name {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> com.mongodb.MongoException$DuplicateKey: { &quot;serverUsed&quot; : &quot;127.0.0.1:27017&quot; ,
+    &quot;ok&quot; : 1 , &quot;n&quot; : 0 , &quot;err&quot; : &quot;E11000 duplicate key error collection:
+    betting.users index: _id_ dup key: { : ObjectId(&#39;5c793b8e77c8fa6813b920df&#39;) }&quot; , &quot;code&quot; :
+    11000}</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>javax.servlet.ServletException: com.mongodb.MongoException$DuplicateKey: { &quot;serverUsed&quot; : &quot;127.0.0.1:27017&quot; , &quot;ok&quot; : 1 , &quot;n&quot; : 0 , &quot;err&quot; : &quot;E11000 duplicate key error collection: betting.users index: _id_ dup key: { : ObjectId(&#39;5c793b8e77c8fa6813b920df&#39;) }&quot; , &quot;code&quot; : 11000}
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:373)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>com.mongodb.MongoException$DuplicateKey: { &quot;serverUsed&quot; : &quot;127.0.0.1:27017&quot; , &quot;ok&quot; : 1 , &quot;n&quot; : 0 , &quot;err&quot; : &quot;E11000 duplicate key error collection: betting.users index: _id_ dup key: { : ObjectId(&#39;5c793b8e77c8fa6813b920df&#39;) }&quot; , &quot;code&quot; : 11000}
+	com.mongodb.CommandResult.getWriteException(CommandResult.java:88)
+	com.mongodb.CommandResult.getException(CommandResult.java:79)
+	com.mongodb.DBCollectionImpl.translateBulkWriteException(DBCollectionImpl.java:314)
+	com.mongodb.DBCollectionImpl.insert(DBCollectionImpl.java:189)
+	com.mongodb.DBCollectionImpl.insert(DBCollectionImpl.java:165)
+	com.mongodb.DBCollection.insert(DBCollection.java:93)
+	com.mongodb.DBCollection.insert(DBCollection.java:78)
+	com.mongodb.DBCollection.insert(DBCollection.java:120)
+	controller.DatabaseController.insertDocument(DatabaseController.java:18)
+	HelloWorld.sayPlainTextHello(HelloWorld.java:26)
+	sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	java.lang.reflect.Method.invoke(Method.java:498)
+	org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:140)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:158)
+	org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:195)
+	org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:101)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:353)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:343)
+	org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:237)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:211)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:982)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:359)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.14</h3></body>
+</html>

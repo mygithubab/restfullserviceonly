@@ -1,15 +1,52 @@
 package controller;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
-import models.ArgumetParse;
+import com.mongodb.*;
 
+public class DatabaseController {
+    public DatabaseConnection instance;
+    public DBCollection collection;
 
-import java.util.ArrayList;
+    public DatabaseController(String dbName) {
+        instance = DatabaseConnection.getInstance();
+        DB database = instance.getDatabase();
+        collection = database.getCollection(dbName);
 
-public interface DatabaseController {
-    public boolean insertDocument(BasicDBObject document);
-    public boolean updateDocument(BasicDBObject document);
-    public boolean deleteDocument(String id);
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument);
+    }
+
+    public boolean insertDocument(BasicDBObject document) {
+
+        if (collection.insert(document) != null) {
+            return true;
+        }
+        return false;
+
+    }
+
+    public boolean updateDocument(BasicDBObject searchQuery, BasicDBObject document) {
+
+        if (collection.update(searchQuery, document) != null) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public boolean deleteDocument(DBObject document) {
+
+        if (collection.remove(document) != null) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public DBCursor getDocuments(BasicDBObject query) {
+        DBCursor cursor = collection.find(query);
+        return cursor;
+    }
+
+    public DBCursor getAllDocuments() {
+        DBCursor cursor = collection.find();
+        return cursor;
+    }
 }

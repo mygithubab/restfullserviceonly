@@ -1,15 +1,18 @@
 package models;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
-import controller.DatabaseController;
-import java.util.ArrayList;
 
-public class Bet implements DatabaseController {
+import controller.DatabaseController;
+
+public class Bet extends DatabaseController {
     public String id;
     public String user_id;
     public String team_id;
     public String game_id;
+
+
+    public Bet() {
+        super("bets");
+    }
 
     public String getId() {
         return id;
@@ -43,19 +46,5 @@ public class Bet implements DatabaseController {
         this.game_id = game_id;
     }
 
-    public boolean insertDocument(BasicDBObject document) {
-        return false;
-    }
 
-    public boolean updateDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean deleteDocument(String id) {
-        return false;
-    }
-
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument) {
-        return null;
-    }
 }

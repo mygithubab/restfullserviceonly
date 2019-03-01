@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head><title>HTTP Status 500 – Internal Server Error</title>
+    <style type="text/css">h1 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 22px;
+    }
+
+    h2 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+        font-size: 14px;
+    }
+
+    body {
+        font-family: Tahoma, Arial, sans-serif;
+        color: black;
+        background-color: white;
+    }
+
+    b {
+        font-family: Tahoma, Arial, sans-serif;
+        color: white;
+        background-color: #525D76;
+    }
+
+    p {
+        font-family: Tahoma, Arial, sans-serif;
+        background: white;
+        color: black;
+        font-size: 12px;
+    }
+
+    a {
+        color: black;
+    }
+
+    a.name {
+        color: black;
+    }
+
+    .line {
+        height: 1px;
+        background-color: #525D76;
+        border: none;
+    }</style>
+</head>
+<body><h1>HTTP Status 500 – Internal Server Error</h1>
+<hr class="line"/>
+<p><b>Type</b> Exception Report</p>
+<p><b>Message</b> A MultiException has 2 exceptions. They are:</p>
+<p><b>Description</b> The server encountered an unexpected condition that prevented it from fulfilling the request.</p>
+<p><b>Exception</b></p>
+<pre>javax.servlet.ServletException: A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com&#47;oracle&#47;tools&#47;packager&#47;Log
+2. java.lang.IllegalStateException: Unable to perform operation: create on HelloWorld
+
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:373)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>A MultiException has 2 exceptions.  They are:
+1. java.lang.NoClassDefFoundError: com&#47;oracle&#47;tools&#47;packager&#47;Log
+2. java.lang.IllegalStateException: Unable to perform operation: create on HelloWorld
+
+	org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:362)
+	org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:454)
+	org.glassfish.jersey.process.internal.RequestScope.findOrCreate(RequestScope.java:158)
+	org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2296)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:590)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:577)
+	org.glassfish.jersey.internal.inject.Injections.getOrCreate(Injections.java:172)
+	org.glassfish.jersey.server.model.MethodHandler$ClassBasedMethodHandler.getInstance(MethodHandler.java:185)
+	org.glassfish.jersey.server.internal.routing.PushMethodHandlerRouter.apply(PushMethodHandlerRouter.java:103)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:120)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:104)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:63)
+	org.glassfish.jersey.process.internal.Stages.process(Stages.java:197)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:228)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:211)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:982)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:359)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.NoClassDefFoundError: com&#47;oracle&#47;tools&#47;packager&#47;Log
+	controller.DatabaseConnection.&lt;init&gt;(DatabaseConnection.java:15)
+	HelloWorld.&lt;init&gt;(HelloWorld.java:13)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1092)
+	org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:261)
+	org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:336)
+	org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:454)
+	org.glassfish.jersey.process.internal.RequestScope.findOrCreate(RequestScope.java:158)
+	org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2296)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:590)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:577)
+	org.glassfish.jersey.internal.inject.Injections.getOrCreate(Injections.java:172)
+	org.glassfish.jersey.server.model.MethodHandler$ClassBasedMethodHandler.getInstance(MethodHandler.java:185)
+	org.glassfish.jersey.server.internal.routing.PushMethodHandlerRouter.apply(PushMethodHandlerRouter.java:103)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:120)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:104)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:63)
+	org.glassfish.jersey.process.internal.Stages.process(Stages.java:197)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:228)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:211)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:982)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:359)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Root Cause</b></p>
+<pre>java.lang.ClassNotFoundException: com.oracle.tools.packager.Log
+	org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1343)
+	org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1173)
+	controller.DatabaseConnection.&lt;init&gt;(DatabaseConnection.java:15)
+	HelloWorld.&lt;init&gt;(HelloWorld.java:13)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	org.glassfish.hk2.utilities.reflection.ReflectionHelper.makeMe(ReflectionHelper.java:1092)
+	org.jvnet.hk2.internal.ClazzCreator.createMe(ClazzCreator.java:261)
+	org.jvnet.hk2.internal.ClazzCreator.create(ClazzCreator.java:336)
+	org.jvnet.hk2.internal.SystemDescriptor.create(SystemDescriptor.java:454)
+	org.glassfish.jersey.process.internal.RequestScope.findOrCreate(RequestScope.java:158)
+	org.jvnet.hk2.internal.Utilities.createService(Utilities.java:2296)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:590)
+	org.jvnet.hk2.internal.ServiceLocatorImpl.getService(ServiceLocatorImpl.java:577)
+	org.glassfish.jersey.internal.inject.Injections.getOrCreate(Injections.java:172)
+	org.glassfish.jersey.server.model.MethodHandler$ClassBasedMethodHandler.getInstance(MethodHandler.java:185)
+	org.glassfish.jersey.server.internal.routing.PushMethodHandlerRouter.apply(PushMethodHandlerRouter.java:103)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:120)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage._apply(RoutingStage.java:123)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:104)
+	org.glassfish.jersey.server.internal.routing.RoutingStage.apply(RoutingStage.java:63)
+	org.glassfish.jersey.process.internal.Stages.process(Stages.java:197)
+	org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:228)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:318)
+	org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:211)
+	org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:982)
+	org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:359)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:372)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:335)
+	org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:218)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+</pre>
+<p><b>Note</b> The full stack trace of the root cause is available in the server logs.</p>
+<hr class="line"/>
+<h3>Apache Tomcat/9.0.14</h3></body>
+</html>

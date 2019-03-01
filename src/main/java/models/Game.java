@@ -1,12 +1,10 @@
 package models;
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
 import controller.DatabaseController;
-import java.util.ArrayList;
+
 import java.util.Date;
 
-public class Game implements DatabaseController {
+public class Game extends DatabaseController {
     public String id;
     public String name;
     public String t1_id;
@@ -14,6 +12,11 @@ public class Game implements DatabaseController {
     public String sport_id;
     public Date start_time;
     public Date end_time;
+
+    public Game() {
+        super("games");
+
+    }
 
     public String getId() {
         return id;
@@ -72,19 +75,4 @@ public class Game implements DatabaseController {
     }
 
 
-    public boolean insertDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean updateDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean deleteDocument(String id) {
-        return false;
-    }
-
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument) {
-        return null;
-    }
 }

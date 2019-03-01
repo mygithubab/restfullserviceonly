@@ -1,18 +1,19 @@
 package models;
 
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
 import controller.DatabaseController;
-import java.util.ArrayList;
 
-public class History implements DatabaseController {
+public class History extends DatabaseController {
     public String id;
     public String game_id;
     public String team1_id;
     public String team2_id;
     public String result_t1;
     public String result_t2;
+
+    public History() {
+        super("history");
+    }
 
     public String getId() {
         return id;
@@ -63,19 +64,4 @@ public class History implements DatabaseController {
     }
 
 
-    public boolean insertDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean updateDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean deleteDocument(String id) {
-        return false;
-    }
-
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument) {
-        return null;
-    }
 }

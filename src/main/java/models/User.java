@@ -1,17 +1,25 @@
 package models;
 
 
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
 import controller.DatabaseController;
 
-import java.util.ArrayList;
-
-public class User implements DatabaseController {
+public class User extends DatabaseController {
     public String id;
     public String name;
     public String password;
     public String ammount;
+
+    public User() {
+        super("users");
+    }
+
+    public User(String dbName, String id, String name, String password, String ammount) {
+        super(dbName);
+        this.id = id;
+        this.name = name;
+        this.password = password;
+        this.ammount = ammount;
+    }
 
     public String getId() {
         return id;
@@ -46,19 +54,4 @@ public class User implements DatabaseController {
     }
 
 
-    public boolean insertDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean updateDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean deleteDocument(String id) {
-        return false;
-    }
-
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument) {
-        return null;
-    }
 }

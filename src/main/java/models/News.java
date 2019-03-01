@@ -1,17 +1,16 @@
 package models;
 
 
-
-import com.mongodb.BasicDBObject;
-import com.mongodb.DBCursor;
 import controller.DatabaseController;
 
-import java.util.ArrayList;
-
-public class News implements DatabaseController {
+public class News extends DatabaseController {
     public String id;
     public String title;
     public String content;
+
+    public News() {
+        super("news");
+    }
 
     public String getId() {
         return id;
@@ -38,19 +37,4 @@ public class News implements DatabaseController {
     }
 
 
-    public boolean insertDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean updateDocument(BasicDBObject document) {
-        return false;
-    }
-
-    public boolean deleteDocument(String id) {
-        return false;
-    }
-
-    public DBCursor getDocuments(ArrayList<ArgumetParse> argument) {
-        return null;
-    }
 }
