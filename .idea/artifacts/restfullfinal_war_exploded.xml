@@ -11,6 +11,7 @@
           <element id="library" level="project" name="Jersey-2.2" />
           <element id="library" level="project" name="org.mongodb:mongo-java-driver:2.12.3" />
           <element id="library" level="project" name="com.google.code.gson:gson:2.8.5" />
+          <element id="library" level="project" name="com.squareup.okhttp3:okhttp:3.3.0" />
         </element>
       </element>
     </root>
