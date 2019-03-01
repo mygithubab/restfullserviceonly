@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d625cc0d-d12f-47da-a481-85b1a5477336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/routes/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/restfullfinal_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/restfullfinal_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/routes/Signup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/DatabaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/DatabaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/routes/HelloWorld.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,14 +25,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/routes/HelloWorld.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
+            <state relative-caret-position="432">
               <caret line="35" selection-start-line="35" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -59,11 +48,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/routes/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="635">
+              <caret line="36" column="57" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="57" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/Signup.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -101,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="288">
               <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="e#224#225#0" expanded="true" />
@@ -127,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+            <state relative-caret-position="1008">
+              <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -180,6 +181,7 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Sport.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/DatabaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/routes/Login.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routes/Signup.java" />
       </list>
     </option>
   </component>
@@ -277,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,6 +332,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -341,7 +343,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551435826628" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551438206048" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -541,6 +543,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.14" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.14" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8088/" />
       <deployment>
         <artifact name="restfullfinal:war exploded">
           <settings>
@@ -550,7 +553,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_14_restfullfinal" />
-        <option name="JNDI_PORT" value="3000" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -642,11 +644,14 @@
       <workItem from="1551454207336" duration="107000" />
       <workItem from="1551434337658" duration="1486000" />
       <workItem from="1551435851460" duration="1801000" />
+      <workItem from="1551437694174" duration="560000" />
+      <workItem from="1551438414833" duration="1888000" />
+      <workItem from="1551440339723" duration="749000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18225000" />
+    <option name="totallyTimeSpent" value="21422000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -659,8 +664,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="980" y="25" width="940" height="1053" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29642057" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22659574" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -669,16 +675,16 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3259177" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3253796" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287483" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3287483" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32814237" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3275488" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3548387" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3546638" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3287483" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.3287483" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
@@ -698,7 +704,7 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" visible="true" weight="0.32956383" />
       <window_info anchor="right" id="Maven" order="11" />
       <window_info anchor="right" id="Flutter Inspector" order="12" />
-      <window_info anchor="right" x="0" y="0" width="185" height="855" id="Documentation" order="13" side_tool="true" visible="true" weight="0.033557046" />
+      <window_info anchor="right" x="0" y="0" width="185" height="855" id="Documentation" order="13" side_tool="true" visible="true" weight="0.032978725" />
       <window_info anchor="right" id="Flutter Outline" order="14" />
       <window_info anchor="right" id="Mongo Explorer" order="15" />
     </layout>
@@ -871,6 +877,16 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/routes/HelloWorld.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="35" selection-start-line="35" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -904,17 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding>
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -923,6 +928,13 @@
             <element signature="e#197#198#0" expanded="true" />
             <element signature="e#227#228#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="1" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -936,27 +948,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="56" column="1" lean-forward="true" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="35" selection-start-line="35" selection-end-line="36" />
+        <state relative-caret-position="635">
+          <caret line="36" column="57" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="36" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Login.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="288">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Signup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -970,10 +986,10 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
+              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
               <type id="library" />
-              <type id="jpa-descriptors" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>restfullfinal:war exploded</last-edited>
