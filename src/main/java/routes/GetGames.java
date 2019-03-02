@@ -28,10 +28,10 @@ public class GetGames {
             System.out.println("null response");
         }
         System.out.println("before");
-       Game[] games =responseGame.data;
-        System.out.println("after");
+        Game[] games =responseGame.data;
+
         for(Game gm : games){
-            System.out.println("after1");
+
             BasicDBObject bs = new BasicDBObject();
             bs.put("commence_time", gm.commence_time);
             bs.put("home_team", gm.home_team);

@@ -20,6 +20,8 @@ public class Game extends DatabaseController implements Serializable{
     @Expose
     public String sport_nice;
     @Expose
+    public String type;
+    @Expose
     public ArrayList<String> teams;
     @Expose
     public long commence_time;
@@ -129,6 +131,14 @@ public class Game extends DatabaseController implements Serializable{
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public ResponseGame getGames(String sport_key){
