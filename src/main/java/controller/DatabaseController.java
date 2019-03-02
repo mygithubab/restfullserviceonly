@@ -2,7 +2,9 @@ package controller;
 
 import com.mongodb.*;
 
-public class DatabaseController {
+import java.io.Serializable;
+
+public class DatabaseController  implements Serializable{
     public DatabaseConnection instance;
     public DBCollection collection;
 
@@ -19,6 +21,12 @@ public class DatabaseController {
             return true;
         }
         return false;
+
+    }
+
+    public DBCollection getCollection() {
+
+        return collection;
 
     }
 

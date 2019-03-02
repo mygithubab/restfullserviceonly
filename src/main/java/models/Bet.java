@@ -3,12 +3,14 @@ package models;
 
 import controller.DatabaseController;
 
+import java.util.ArrayList;
+
 public class Bet extends DatabaseController {
     public String id;
     public String user_id;
-    public String team_id;
     public String game_id;
-
+    public ArrayList<String> teams;
+    public long price;
 
     public Bet() {
         super("bets");
@@ -30,14 +32,6 @@ public class Bet extends DatabaseController {
         this.user_id = user_id;
     }
 
-    public String getTeam_id() {
-        return team_id;
-    }
-
-    public void setTeam_id(String team_id) {
-        this.team_id = team_id;
-    }
-
     public String getGame_id() {
         return game_id;
     }
@@ -46,5 +40,19 @@ public class Bet extends DatabaseController {
         this.game_id = game_id;
     }
 
+    public ArrayList<String> getTeams() {
+        return teams;
+    }
 
+    public void setTeams(ArrayList<String> teams) {
+        this.teams = teams;
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
+    }
 }

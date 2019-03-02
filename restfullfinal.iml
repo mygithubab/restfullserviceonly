@@ -27,5 +27,6 @@
     <orderEntry type="library" name="org.mongodb:mongo-java-driver:2.12.3" level="project" />
     <orderEntry type="library" name="com.google.code.gson:gson:2.8.5" level="project" />
     <orderEntry type="library" name="com.squareup.okhttp3:okhttp:3.3.0" level="project" />
+    <orderEntry type="library" name="org.codehaus.jackson:jackson-jaxrs:1.9.0" level="project" />
   </component>
 </module>

@@ -2,9 +2,13 @@ package models;
 
 
 import controller.DatabaseController;
+import org.bson.types.ObjectId;
 
-public class User extends DatabaseController {
+import java.io.Serializable;
+
+public class User extends DatabaseController implements Serializable{
     public String id;
+    public BDObjectID _id;
     public String name;
     public String password;
     public String ammount;
@@ -19,6 +23,14 @@ public class User extends DatabaseController {
         this.name = name;
         this.password = password;
         this.ammount = ammount;
+    }
+
+    public BDObjectID get_id() {
+        return _id;
+    }
+
+    public void set_id(BDObjectID _id) {
+        this._id = _id;
     }
 
     public String getId() {
