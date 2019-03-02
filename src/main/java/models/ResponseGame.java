@@ -1,10 +1,15 @@
 package models;
 
+import com.google.gson.annotations.Expose;
+
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class ResponseGame {
+public class ResponseGame implements Serializable {
+    @Expose
     public boolean success;
-    public ArrayList<Game> data;
+    @Expose
+    public Game[] data;
 
     public boolean isSuccess() {
         return success;
@@ -14,11 +19,11 @@ public class ResponseGame {
         this.success = success;
     }
 
-    public ArrayList<Game> getData() {
+    public Game[] getData() {
         return data;
     }
 
-    public void setData(ArrayList<Game> data) {
+    public void setData(Game[] data) {
         this.data = data;
     }
 }

@@ -1,6 +1,7 @@
 package routes;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mongodb.DBCursor;
 import models.ResponseSport;
 import models.Sport;
@@ -22,8 +23,18 @@ public class GetSports {
         if(responseSport == null){
             System.out.println("null sport");
         }
-        ArrayList<Sport> sports =responseSport.data;
-        Gson gson = new Gson();
+        Sport[] sports = responseSport.data;
+
+        if(sports == null){
+            System.out.println("null array");
+        }
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gson = gsonBuilder.excludeFieldsWithoutExposeAnnotation().create();
+
+
+        if(gson.toJson(sports) == null){
+            System.out.println("null return");
+        }
 
         return  gson.toJson(sports);
     }

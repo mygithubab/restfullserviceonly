@@ -37,7 +37,8 @@ public class Login {
         User user2 = gson.fromJson(response, User.class);
         // return user1.getName() + ":" + user2.getName();
         if (user1.getName() .equalsIgnoreCase( user2.getName())) {
-            return "{\"login\":\""+ user2._id.get$oid() +"\"}";
+            return "{\"login\":\""+ user2._id.get$oid() +"\" , \"admin\":\""+
+                    user2.isAdmin() +"\" , \"ammount\":\""+ user2.getAmmount() +"\"}";
         }
         return "{\"login\":\"false\"}";
     }

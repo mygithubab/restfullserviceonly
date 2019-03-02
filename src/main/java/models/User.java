@@ -1,17 +1,26 @@
 package models;
 
 
+import com.google.gson.annotations.Expose;
 import controller.DatabaseController;
 import org.bson.types.ObjectId;
 
 import java.io.Serializable;
 
 public class User extends DatabaseController implements Serializable{
+    @Expose
     public String id;
+    @Expose
     public BDObjectID _id;
+    @Expose
     public String name;
+    @Expose
     public String password;
+    @Expose
     public String ammount;
+    @Expose
+    public boolean admin;
+
 
     public User() {
         super("users");
@@ -65,5 +74,11 @@ public class User extends DatabaseController implements Serializable{
         this.ammount = ammount;
     }
 
+    public boolean isAdmin() {
+        return admin;
+    }
 
+    public void setAdmin(boolean admin) {
+        this.admin = admin;
+    }
 }

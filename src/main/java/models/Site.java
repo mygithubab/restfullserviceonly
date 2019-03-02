@@ -1,11 +1,17 @@
 package models;
 
+import com.google.gson.annotations.Expose;
+
 import java.io.Serializable;
 
 public class Site implements Serializable {
+    @Expose
     public String site_key;
+    @Expose
     public String site_nice;
+    @Expose
     public long last_update;
+    @Expose
     public Odd odds;
 
 

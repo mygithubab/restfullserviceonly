@@ -38,7 +38,7 @@ public class Signup {
             lastUser.password = "";
             lastUser.id = lastUser._id.get$oid();
            // String result = gson.toJson(lastUser);
-            return    "{\"signup\":\""+lastUser.id +"\"}";
+            return    "{\"signup\":\""+lastUser.id +"\" , \"admin\":\""+lastUser.getAmmount() +"\" , \"ammount\":\""+lastUser.getAmmount() +"\"}";
         }
 
         String response = JSON.serialize(dbCursor);

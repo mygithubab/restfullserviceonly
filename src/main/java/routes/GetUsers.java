@@ -2,6 +2,7 @@ package routes;
 
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
@@ -22,17 +23,15 @@ public class GetUsers {
         User u = new User();
 
         DBCursor dbCursor = u.getAllDocuments();
-//
-//        ArrayList<User> users = new ArrayList<User>();
-//
-//        while(dbCursor.hasNext())
-//        {
-//            DBObject object = dbCursor.next();
-//            users.add((User)object);
-//
-//        }
-//        Gson gson = new Gson();
 
-        return  JSON.serialize(dbCursor);
+
+        GsonBuilder gsonBuilder = new GsonBuilder();
+        Gson gson = gsonBuilder.excludeFieldsWithoutExposeAnnotation().create();
+        User[] myJSONObject = gson.fromJson(JSON.serialize(dbCursor), User[].class);
+
+        for(User use : myJSONObject){
+            use.password = null;
+        }
+        return  gson.toJson(myJSONObject);
     }
 }
