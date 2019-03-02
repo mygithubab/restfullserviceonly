@@ -7,7 +7,10 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.util.JSON;
-import models.*;
+import models.Game;
+import models.Odd;
+import models.ResponseGame;
+import models.Site;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,14 +19,13 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 
-@Path("/games")
-public class GetGames {
+@Path("/games/upcomming")
+public class GetUpcommingGames {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String getGames(@QueryParam("key") String sport_key) {
+    public String getGames() {
         Game game = new Game();
-        System.out.println(sport_key +" ----key ");
-        ResponseGame responseGame=game.getGames(sport_key);
+        ResponseGame responseGame=game.getUpcommingGames();
         if(responseGame == null){
             System.out.println("null response");
         }
@@ -72,6 +74,7 @@ public class GetGames {
                 //@todo add the new data here
                 bs.put("teams" , gm.teams);
                 bs.put("sport_key" , gm.sport_key);
+                bs.put("type" , "upcomming");
                 bs.put("sport_nice" , gm.sport_nice);
                 bs.put("active" , true);
                 bs.put("commence_time" , gm.commence_time);
@@ -88,7 +91,7 @@ public class GetGames {
         }
 
         BasicDBObject dbObject = new BasicDBObject();
-        dbObject.put("sport_key" , sport_key);
+        dbObject.put("type" , "upcomming");
         DBCursor dbCursor = game.getDocuments(dbObject);
 
         GsonBuilder gsonBuilder = new GsonBuilder();
