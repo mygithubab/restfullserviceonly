@@ -146,6 +146,21 @@ public class Game extends DatabaseController implements Serializable{
         return rs;
     }
 
+    public ResponseGame getUpcommingGames(){
+        OkHttpClient client = new OkHttpClient();
+        String result = "";
+        Gson gson = new Gson();
+        try {
+            System.out.println("https://api.the-odds-api.com/v3/odds/?sport=upcoming&region=uk&mkt=h2h&apiKey="+apiKey+"");
+            result  = getMethod("https://api.the-odds-api.com/v3/odds/?sport=upcoming&region=uk&mkt=h2h&apiKey="+apiKey+"");
+            System.out.println(result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        ResponseGame rs =  gson.fromJson(result, ResponseGame.class);
+        return rs;
+    }
 
 
     String getMethod(String url) throws IOException {

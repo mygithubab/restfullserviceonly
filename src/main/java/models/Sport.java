@@ -105,6 +105,7 @@ public class Sport  extends DatabaseController implements Serializable {
 
 
 
+
     String getMethod(String url) throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
