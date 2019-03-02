@@ -7,9 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d625cc0d-d12f-47da-a481-85b1a5477336" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/routes/GetUpcommingGames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Sport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Sport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -198,8 +196,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUpcommingGames.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="509">
+              <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -352,9 +350,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -425,7 +423,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551541010331" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551542725462" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -731,12 +729,12 @@
       <workItem from="1551438414833" duration="1888000" />
       <workItem from="1551440339723" duration="749000" />
       <workItem from="1551463101061" duration="23724000" />
-      <workItem from="1551540608128" duration="399000" />
+      <workItem from="1551540608128" duration="1560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45545000" />
+    <option name="totallyTimeSpent" value="46706000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -751,7 +749,7 @@
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1672043" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -767,7 +765,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3287483" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3287483" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32737276" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34741288" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.35350758" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3287483" />
@@ -1186,8 +1184,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUpcommingGames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="34" lean-forward="true" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        <state relative-caret-position="509">
+          <caret line="108" column="1" selection-start-line="108" selection-start-column="1" selection-end-line="108" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
