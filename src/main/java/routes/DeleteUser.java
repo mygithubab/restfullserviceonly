@@ -19,9 +19,9 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.io.IOException;
 
-@Path("/user")
-public class DeleteUser implements ContainerResponseFilter {
-    @DELETE
+@Path("/user/delete")
+public class DeleteUser {
+    @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response getUsers(@QueryParam("id") String user_id)  {
         User u = new User();
@@ -43,13 +43,7 @@ public class DeleteUser implements ContainerResponseFilter {
     }
 
 
-    public void filter(final ContainerRequestContext requestContext,
-                       final ContainerResponseContext cres) throws IOException {
-        cres.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
-        cres.getHeaders().add("Access-Control-Allow-Credentials", "true");
-        cres.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-        cres.getHeaders().add("Access-Control-Max-Age", "1209600");
-    }
+
 }
 
 class Dresponce{

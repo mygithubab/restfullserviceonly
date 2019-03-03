@@ -18,7 +18,7 @@ import javax.ws.rs.core.Response;
 import java.io.IOException;
 
 @Path("/users")
-public class GetUsers implements ContainerResponseFilter{
+public class GetUsers {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteUser() {
@@ -41,11 +41,5 @@ public class GetUsers implements ContainerResponseFilter{
 
     }
 
-    public void filter(final ContainerRequestContext requestContext,
-                       final ContainerResponseContext cres) throws IOException {
-        cres.getHeaders().add("Access-Control-Allow-Headers", "origin, content-type, accept, authorization");
-        cres.getHeaders().add("Access-Control-Allow-Credentials", "true");
-        cres.getHeaders().add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, HEAD");
-        cres.getHeaders().add("Access-Control-Max-Age", "1209600");
-    }
+
 }

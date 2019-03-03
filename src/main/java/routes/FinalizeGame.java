@@ -65,35 +65,54 @@ public class FinalizeGame {
 
             if(requestGame.team1 > requestGame.team2 && bt.choice == 0){
                 //@todo team1 wins and user bet on it
-
-                User user = new User();
-                BasicDBObject queryD = new BasicDBObject();
-                queryD.put("_id" ,new ObjectId(better.get_id().get$oid()));
-
-
-                BasicDBObject result = new BasicDBObject();
-                result.put("_id" ,new ObjectId(better.get_id().get$oid()));
-                result.put("id" ,better.get_id());
-                result.put("admin" ,better.isAdmin());
-                result.put("ammount" ,better.ammount);
-                result.put("name" ,better.name);
-                result.put("password" ,better.password);
-
-                //updates database
-                user.updateDocument(queryD , result);
-
+                ChechAndDecide(better , bt ,"add");
             }
-            else if(requestGame.team1 == requestGame.team2){
+            else if(requestGame.team1 == requestGame.team2 && bt.choice == 1){
                 //@todo draw
+                ChechAndDecide(better , bt ,"add");
             }
-            else{
+            else if(requestGame.team1 < requestGame.team2 && bt.choice == 2){
                 //@todo team2 wins
+                ChechAndDecide(better , bt ,"add");
+            }
+            else {
+                ChechAndDecide(better , bt ,"sub");
             }
 
         }
         System.out.println("re : -- r9");
 
-        return Response.ok(JSON.serialize(betCursor)).header("Access-Control-Allow-Origin", "*").build();
+        return Response.ok(gson.toJson(JSON.parse("{\"finalize\":\"true\"}"))).header("Access-Control-Allow-Origin", "*").build();
 
     }
+
+        public static void ChechAndDecide(User better , Bet bt , String add){
+
+            User user = new User();
+            BasicDBObject queryD = new BasicDBObject();
+            queryD.put("_id" ,new ObjectId(better.get_id().get$oid()));
+
+            double finalResult = 0;
+            if("add".equals(add)){
+                finalResult = better.ammount + bt.price;
+            }
+
+            if("sub".equals(add)){
+                finalResult = better.ammount - bt.price;
+            }
+
+
+
+            BasicDBObject result = new BasicDBObject();
+            result.put("_id" ,new ObjectId(better.get_id().get$oid()));
+            result.put("id" ,better.get_id());
+            result.put("admin" ,better.isAdmin());
+            result.put("ammount" ,finalResult);
+            result.put("name" ,better.name);
+            result.put("password" ,better.password);
+
+            //updates database
+            user.updateDocument(queryD , result);
+        }
+
 }
