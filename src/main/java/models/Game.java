@@ -16,6 +16,8 @@ public class Game extends DatabaseController implements Serializable{
     @Expose
     public String id;
     @Expose
+    public BDObjectID _id;
+    @Expose
     public String sport_key;
     @Expose
     public String sport_nice;
@@ -43,6 +45,14 @@ public class Game extends DatabaseController implements Serializable{
     public Game() {
         super("games");
 
+    }
+
+    public BDObjectID get_id() {
+        return _id;
+    }
+
+    public void set_id(BDObjectID _id) {
+        this._id = _id;
     }
 
     public boolean isActive() {
