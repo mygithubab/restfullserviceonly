@@ -20,7 +20,7 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 
 @Path("/games/upcomming")
-public class GetUpcommingGames {
+public class    GetUpcommingGames {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String getGames() {

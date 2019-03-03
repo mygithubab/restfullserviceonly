@@ -40,7 +40,7 @@ public class Bet extends DatabaseController {
         this.game_id = game_id;
     }
 
-    public ArrayList<String> getTeams() {
+    public ArrayList<String> getTeams()  {
         return teams;
     }
 
