@@ -17,7 +17,7 @@ public class User extends DatabaseController implements Serializable{
     @Expose
     public String password;
     @Expose
-    public String ammount;
+    public double ammount = 0.0;
     @Expose
     public boolean admin;
 
@@ -26,7 +26,7 @@ public class User extends DatabaseController implements Serializable{
         super("users");
     }
 
-    public User(String dbName, String id, String name, String password, String ammount) {
+    public User(String dbName, String id, String name, String password, double ammount) {
         super(dbName);
         this.id = id;
         this.name = name;
@@ -66,11 +66,11 @@ public class User extends DatabaseController implements Serializable{
         this.password = password;
     }
 
-    public String getAmmount() {
+    public double getAmmount() {
         return ammount;
     }
 
-    public void setAmmount(String ammount) {
+    public void setAmmount(double ammount) {
         this.ammount = ammount;
     }
 

@@ -16,9 +16,13 @@ public class Game extends DatabaseController implements Serializable{
     @Expose
     public String id;
     @Expose
+    public BDObjectID _id;
+    @Expose
     public String sport_key;
     @Expose
     public String sport_nice;
+    @Expose
+    public String type;
     @Expose
     public ArrayList<String> teams;
     @Expose
@@ -41,6 +45,14 @@ public class Game extends DatabaseController implements Serializable{
     public Game() {
         super("games");
 
+    }
+
+    public BDObjectID get_id() {
+        return _id;
+    }
+
+    public void set_id(BDObjectID _id) {
+        this._id = _id;
     }
 
     public boolean isActive() {
@@ -129,6 +141,14 @@ public class Game extends DatabaseController implements Serializable{
 
     public void setApiKey(String apiKey) {
         this.apiKey = apiKey;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public ResponseGame getGames(String sport_key){

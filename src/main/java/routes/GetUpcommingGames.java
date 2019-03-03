@@ -15,15 +15,15 @@ import models.Site;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
 @Path("/games/upcomming")
 public class    GetUpcommingGames {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String getGames() {
+    public Response getGames() {
         Game game = new Game();
         ResponseGame responseGame=game.getUpcommingGames();
         if(responseGame == null){
@@ -107,6 +107,9 @@ public class    GetUpcommingGames {
         }
 
         Game[] finalResult = filtered.toArray(new Game[0]);
-        return  gson.toJson(finalResult);
+
+        return Response.ok(gson.toJson(finalResult)).header("Access-Control-Allow-Origin", "*").build();
+
+
     }
 }

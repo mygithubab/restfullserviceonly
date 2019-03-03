@@ -14,13 +14,14 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
 @Path("/games")
 public class GetGames {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public String getGames(@QueryParam("key") String sport_key) {
+    public Response getGames(@QueryParam("key") String sport_key) {
         Game game = new Game();
         System.out.println(sport_key +" ----key ");
         ResponseGame responseGame=game.getGames(sport_key);
@@ -28,10 +29,10 @@ public class GetGames {
             System.out.println("null response");
         }
         System.out.println("before");
-       Game[] games =responseGame.data;
-        System.out.println("after");
+        Game[] games =responseGame.data;
+
         for(Game gm : games){
-            System.out.println("after1");
+
             BasicDBObject bs = new BasicDBObject();
             bs.put("commence_time", gm.commence_time);
             bs.put("home_team", gm.home_team);
@@ -104,6 +105,8 @@ public class GetGames {
         }
 
         Game[] finalResult = filtered.toArray(new Game[0]);
-        return  gson.toJson(finalResult);
+
+        return Response.ok(gson.toJson(finalResult)).header("Access-Control-Allow-Origin", "*").build();
+
     }
 }

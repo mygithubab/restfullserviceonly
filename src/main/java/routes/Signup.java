@@ -11,6 +11,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
 
 import models.User;
 
@@ -21,7 +22,7 @@ public class Signup {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
 
-    public String Signup(String user) {
+    public Response Signup(String user) {
         Gson gson = new Gson();
         User user1 = gson.fromJson(user, User.class);
         BasicDBObject bs = new BasicDBObject();
@@ -30,7 +31,8 @@ public class Signup {
         DBObject dbCursor = user1.getOneDocuments(bs);
         if(dbCursor == null){
             bs.put("password" ,user1.getPassword());
-            bs.put("ammount" ,0);
+            bs.put("ammount" ,user1.ammount);
+            bs.put("admin" ,user1.isAdmin());
             DBCollection collection = user1.getCollection();
             user1.insertDocument(bs);
             DBObject registeredUser = user1.getOneDocuments(bs);
@@ -38,12 +40,14 @@ public class Signup {
             lastUser.password = "";
             lastUser.id = lastUser._id.get$oid();
            // String result = gson.toJson(lastUser);
-            return    "{\"signup\":\""+lastUser.id +"\" , \"admin\":\""+lastUser.getAmmount() +"\" , \"ammount\":\""+lastUser.getAmmount() +"\"}";
+            return Response.ok(gson.toJson(JSON.parse("{\"signup\":\""+lastUser.id +"\" , \"admin\":\""+lastUser.getAmmount() +"\" , \"ammount\":\""+lastUser.getAmmount() +"\"}"))).header("Access-Control-Allow-Origin", "*").build();
+
+
         }
 
         String response = JSON.serialize(dbCursor);
         User user2 = gson.fromJson(response, User.class);
+        return Response.ok(gson.toJson(JSON.parse("{\"signup\":\"user already exists\"}"))).header("Access-Control-Allow-Origin", "*").build();
 
-        return    "{\"signup\":\"user already exists\"}";
     }
 }
