@@ -7,19 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d625cc0d-d12f-47da-a481-85b1a5477336" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routes/Filter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/routes/GetSingleUser.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/DeleteUser.class" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/DeleteUser.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/Dresponce.class" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/Dresponce.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/GetUsers.class" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/GetUsers.class" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/routes/DeleteUser.java" afterPath="$PROJECT_DIR$/src/main/java/routes/DeleteUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java" afterPath="$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/routes/GetUsers.java" afterPath="$PROJECT_DIR$/src/main/java/routes/GetUsers.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/routes/DeleteUser.class" afterPath="$PROJECT_DIR$/target/classes/routes/DeleteUser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/routes/Dresponce.class" afterPath="$PROJECT_DIR$/target/classes/routes/Dresponce.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/routes/GetUsers.class" afterPath="$PROJECT_DIR$/target/classes/routes/GetUsers.class" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/FinalizeGame.class" afterPath="$PROJECT_DIR$/out/artifacts/restfullfinal_war_exploded/WEB-INF/classes/routes/FinalizeGame.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/routes/FinalizeGame.class" afterPath="$PROJECT_DIR$/target/classes/routes/FinalizeGame.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,13 +28,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FinalizeGame.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java">
+      <file leaf-file-name="GetUsers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+            <state relative-caret-position="381">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetSingleUser.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetSingleUser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddDeposite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/AddDeposite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="498">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/Filter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FinalizeGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GameResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/models/GameResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="21" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="13" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#282#283#0" expanded="true" />
+                <element signature="e#312#313#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
+                <element signature="e#453#454#0" expanded="true" />
+                <element signature="e#492#493#0" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#583#584#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#656#657#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,26 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sport.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Sport.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Odd.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Odd.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="6" column="57" lean-forward="false" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DatabaseConnection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,61 +134,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/DatabaseController.java">
+      <file leaf-file-name="GetBets.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetBets.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+            <state relative-caret-position="46">
+              <caret line="37" column="72" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-363">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#782#783#0" expanded="true" />
-                <element signature="e#808#809#0" expanded="true" />
-                <element signature="e#850#851#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#1462#1463#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-                <element signature="e#1533#1534#0" expanded="true" />
-                <element signature="e#1567#1568#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Team.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/models/Team.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeleteUser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/routes/DeleteUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1626#1627#0" expanded="true" />
-                <element signature="e#1654#1655#0" expanded="true" />
-                <element signature="e#1693#1694#0" expanded="true" />
-                <element signature="e#1727#1728#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -242,6 +237,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/routes/DeleteUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/routes/GetSingleUser.java" />
       </list>
     </option>
   </component>
@@ -451,25 +447,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="Filter" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="restfullserviceonly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restfullserviceonly" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="FinalizeGame" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="restfullserviceonly" type="b2602c69:ProjectViewProjectNode" />
-              <item name="restfullserviceonly" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="1a9f42e2:ClassTreeNode" />
+              <item name="GetSingleUser" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="restfullserviceonly" type="b2602c69:ProjectViewProjectNode" />
@@ -855,12 +833,12 @@
       <workItem from="1551463101061" duration="23724000" />
       <workItem from="1551540608128" duration="1869000" />
       <workItem from="1551543240545" duration="2414000" />
-      <workItem from="1551608257529" duration="15881000" />
+      <workItem from="1551608257529" duration="16616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65310000" />
+    <option name="totallyTimeSpent" value="66045000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -972,16 +950,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Odd.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1230,28 +1198,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/GameResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#282#283#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#526#527#0" expanded="true" />
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -1262,16 +1208,6 @@
             <element signature="e#1091#1092#0" expanded="true" />
             <element signature="e#1133#1134#0" expanded="true" />
             <element signature="e#1163#1164#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetBets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="56" column="104" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1314,36 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="174">
           <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/AddDeposite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Filter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1473,10 +1379,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/GameResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#312#313#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#453#454#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#583#584#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#656#657#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetUsers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/AddDeposite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/Filter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/routes/FinalizeGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="224">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetBets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="37" column="72" lean-forward="false" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/routes/GetSingleUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
