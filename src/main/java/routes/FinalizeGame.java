@@ -42,6 +42,7 @@ public class FinalizeGame {
         query.put("_id" , new ObjectId(requestGame.getGame_id()));
         System.out.println("re : -- r4");
         DBObject actualGameDb= game.getOneDocuments(query);
+
         Game actualGame = gson.fromJson(JSON.serialize(actualGameDb),Game.class);
         System.out.println("re : -- r5");
         System.out.println("actual game od :" + JSON.serialize(actualGameDb));
@@ -81,6 +82,23 @@ public class FinalizeGame {
 
         }
         System.out.println("re : -- r9");
+
+        BasicDBObject gquery = new BasicDBObject();
+        gquery.put("_id" , new ObjectId(actualGame.get_id().get$oid()));
+
+        BasicDBObject gdata = new BasicDBObject();
+        gdata.put("_id",new ObjectId(actualGame.get_id().get$oid() ));
+        gdata.put("commence_time",actualGame.commence_time);
+        gdata.put("sites",actualGame.sites);
+        gdata.put("sport_nice",actualGame.sport_nice);
+        gdata.put("sport_key",actualGame.sport_key);
+        gdata.put("teams",actualGame.teams);
+        gdata.put("home_team",actualGame.home_team);
+        gdata.put("averageOdd",actualGame.averageOdd);
+        gdata.put("active",false);
+
+        game.updateDocument(gquery ,gdata);
+
 
         return Response.ok(gson.toJson(JSON.parse("{\"finalize\":\"true\"}"))).header("Access-Control-Allow-Origin", "*").build();
 
