@@ -16,6 +16,10 @@ public class Bet extends DatabaseController {
     @Expose
     public String game_id;
     @Expose
+    public String status;
+    @Expose
+    public ArrayList<String> score;
+    @Expose
     public double odd;
     @Expose
     public int choice;
@@ -25,7 +29,25 @@ public class Bet extends DatabaseController {
     public double price;
     @Expose
     public String sport_key;
+    @Expose
+    public boolean active = true;
 
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public ArrayList<String> getScore() {
+        return score;
+    }
+
+    public void setScore(ArrayList<String> score) {
+        this.score = score;
+    }
 
     public BDObjectID get_id() {
         return _id;
