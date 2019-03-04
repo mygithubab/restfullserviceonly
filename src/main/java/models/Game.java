@@ -41,7 +41,9 @@ public class Game extends DatabaseController implements Serializable{
     public ArrayList<Double> averageOdd;
 
     OkHttpClient client = new OkHttpClient();
-    String apiKey= "b82fb87021bac76f7c6106de85a90d48";
+    //String apiKey= "b82fb87021bac76f7c6106de85a90d48";
+    String apiKey= "55b9f2a7c718ae6786790c8daacadbe9";
+
     public Game() {
         super("games");
 

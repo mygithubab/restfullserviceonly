@@ -19,6 +19,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("/game/finalize")
 
@@ -67,17 +68,45 @@ public class FinalizeGame {
             if(requestGame.team1 > requestGame.team2 && bt.choice == 0){
                 //@todo team1 wins and user bet on it
                 ChechAndDecide(better , bt ,"add");
+                updatebet(requestGame ,bt);
+
             }
             else if(requestGame.team1 == requestGame.team2 && bt.choice == 1){
                 //@todo draw
                 ChechAndDecide(better , bt ,"add");
+                updatebet(requestGame ,bt);
+
             }
             else if(requestGame.team1 < requestGame.team2 && bt.choice == 2){
                 //@todo team2 wins
                 ChechAndDecide(better , bt ,"add");
+                updatebet(requestGame ,bt);
             }
             else {
                 ChechAndDecide(better , bt ,"sub");
+                int[] data = new int[2];
+                data[0] = requestGame.team1;
+                data[1] = requestGame.team2;
+
+                BasicDBObject tempbt = new BasicDBObject();
+
+                tempbt.put("user_id" , bt.user_id);
+                tempbt.put("odd" , bt.odd);
+                tempbt.put("price" , bt.price);
+                tempbt.put("teams" , bt.teams);
+                tempbt.put("game_id" , bt.game_id);
+                tempbt.put("choice" , bt.choice);
+                tempbt.put("sport_key" , bt.sport_key);
+                tempbt.put("_id" , new ObjectId(bt._id.get$oid()));
+                tempbt.put("id" , bt.id);
+                tempbt.put("score" , data);
+                tempbt.put("status" , "loss");
+
+
+                BasicDBObject tempq = new BasicDBObject();
+                tempq.put("_id" , new ObjectId(bt._id.get$oid()));
+
+                bt.updateDocument(tempq ,tempbt);
             }
 
         }
@@ -102,6 +131,34 @@ public class FinalizeGame {
 
         return Response.ok(gson.toJson(JSON.parse("{\"finalize\":\"true\"}"))).header("Access-Control-Allow-Origin", "*").build();
 
+    }
+
+    public void updatebet(GameResponse requestGame , Bet bt){
+
+        int[] data = new int[2];
+        data[0] = requestGame.team1;
+        data[1] = requestGame.team2;
+
+        BasicDBObject tempbt = new BasicDBObject();
+
+        tempbt.put("user_id" , bt.user_id);
+        tempbt.put("odd" , bt.odd);
+        tempbt.put("price" , bt.price);
+        tempbt.put("teams" , bt.teams);
+        tempbt.put("game_id" , bt.game_id);
+        tempbt.put("choice" , bt.choice);
+        tempbt.put("sport_key" , bt.sport_key);
+        tempbt.put("_id" , new ObjectId(bt._id.get$oid()));
+        tempbt.put("id" , bt.id);
+        tempbt.put("score" , data);
+        tempbt.put("active" , false);
+        tempbt.put("status" , "win");
+
+
+        BasicDBObject tempq = new BasicDBObject();
+        tempq.put("_id" , new ObjectId(bt._id.get$oid()));
+
+        bt.updateDocument(tempq ,tempbt);
     }
 
         public static void ChechAndDecide(User better , Bet bt , String add){
